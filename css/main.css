@@ -1,13 +1,14 @@
 body {
     padding: 0%;
     margin:0%;
+   
 }
 /* 页面大容器的样式 */
 #container {
     margin: 0px auto;
     padding: 0px;
     width: 1025px;
-    background: aqua;
+    height: 2050px;
 }
 #top {
   width:100%;  
@@ -66,10 +67,12 @@ body {
     margin: 0px;
     padding:0px;
     list-style-type: none;
-
+    position: absolute;    
+    z-index: 999999999999999;
 }
 /* 横向主菜单 */
 .nav-1 {
+      
     width: 128px;
     float:left;
 }
@@ -93,7 +96,8 @@ body {
     padding:0px;
     list-style-type: none; 
     color:black;
-    background:  #DDDEE3;
+    background:  #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .nav-1 ul li {
     display: block;
@@ -101,20 +105,117 @@ body {
 }
 .nav-1 ul a {
     color:black;
-    background:  #DDDEE3;
+    background:  #FFF;
+    padding: 4px 3px 4px 3px;
 }
+
 .nav-1 ul a:hover {
     color:rgb(22, 33, 190);
     background: #DDDEE3;
+}
+li.nav-1:hover ul{
+    display: block;
+}
+/* 主内容区 */
+.main{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1000px;
+    margin-top: 10px;
+}
+
+.main-1-left{
+    width: 540px;
+    float: left;
+    background-color: white;
+    height: 100%;
+}
+.main-1-left-top{
+    width: 100%;
+    height: 60px;
+}
+.main-1-left-top span{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.main-1-left-top p{
+    float: right;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.left-list{
+    margin-left: -36px;
+}
+.left-list li {
+    list-style-type: none;
+}
+.left-list li a{
+    font-size: 17px;
+    color: #666;
+    text-decoration: none;
+}
+.left-list li p{
+    color: rgb(168, 168, 168);
+    font-size: 12px;
+}
+.main-1-right{
+    width: 465px;
+    float: right;
+    background-color: white;
+    height: 100%;
+}
+
+.right-list li{
+    color: #989898;
+    font-weight: bold;
+    list-style-position: inside;
+    padding: 5px  0 5px 0;
+    font-size: 17px;
+}
+.right-list li a{
+    text-decoration: none;
+    color: #989898;
+}
+.hal-date{
+    float: left;
+}
+.collage li{
+    float: left;
+}
+.h-time{
+    font-size: 17px;
+    color: #093b96;
+    margin-right: 15px;
+    border-right:  2px solid peru
+}
+.h-time span{
+    margin: 15px;
+}
+.a1{
+    margin-right: 380px;
+}
+.a2{
+    font-size: 12px;    
+}
+.other a{
+    text-decoration: none;
+    color:  #093b96;
+}
+
+/* 光影画廊 */
+#bottom{
+    color: #989898;
+    font-weight: bold;
 }
 .gallery-scroll ul{
 	list-style: none;
 }
 .gallery-scroll{
 	position: absolute;
-	top: 615px;	
+	top: 1770px;	
 	width: 1025px;
-	height:150px;
+	height:142px;
 	overflow: hidden;
 
 }
@@ -136,4 +237,56 @@ body {
 	  font-size:20px; 
 	  color:#014099; 
 	  float:left
+}
+/* 专题栏目 */
+.footer{
+    margin-top: 180px;
+    width: 100%;
+}
+.footer-s{
+    color: #989898;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.footer-list{
+    margin-left: -20px;
+   
+}
+.footer-list li{
+    float: left;
+    list-style-type: none;
+    padding: 20px 10px 20px 10px;
+    
+}
+.footer-list li a{
+    text-decoration: none;
+    color: black;
+}
+/* 底部样式 */
+.down{
+    width: 100%;
+    height: 136px;
+    background-color:#014099 ;
+}
+.center{
+    width: 1025px;
+    height: 100%;
+    margin-left: 314px;
+}
+.down-center{
+    margin-top: 40px;
+    margin-left: 20px;
+    color: white;
+    font-size: 14px;
+}
+.down-right{
+    margin-top: 40px;
+    color: white;
+    font-size: 14px;
+}
+.down-right a{
+    text-decoration: none;
+    color: white;
 }

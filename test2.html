@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>下拉菜单实例|菜鸟教程(runoob.com)</title>
+<meta charset="utf-8">
+<style>
+  div{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:#333;
+  }
+  
+  
+  
+  .nav-1
+  {
+    display:inline-block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+  }
+  
+.nav:hover, .nav-1
+  {
+    background-color:#111;
+  }
+  
+  .nav
+  {
+    display:inline-block;
+  }
+  
+  .nav-1>ul
+  {
+    display:none;
+    position:absolute;
+    background-color:#f9f9f9;
+    min-width:160px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .nav-1>ul>li>a
+  {
+    color:black;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+  }
+  
+  .nav-1 ul li a:hover {background-color: #f1f1f1}
+  
+  .nav:hover .nav-1>ul>li
+  {
+    display:block;
+  }
+  
+  </style>
+</head>
+<body>
+
+<div>
+  <ul class="nav">
+    <li class="nav-1"><a href="#" >下拉菜单</a></li>
+    <ul >
+     <li><a href="#">链接 1</a></li> 
+     <li> <a href="#">链接 2</a></li>
+     <li><a href="#">链接 3</a></li>
+    </ul>
+</ul>
+</div>
+
+<h3>导航栏上的下拉菜单</h3>
+<p>鼠标移动到 "下拉菜单" 链接先显示下拉菜单。</p>
+
+</body>
+</html>
